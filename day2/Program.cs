@@ -6,11 +6,34 @@ namespace CoolStoryBro
     {
         static void Main(string[] args)
         {
-            string s = "5dfdas";
-            Console.
-                WriteLine(s);
-            Console.
-                ReadLine();
+            Console.WriteLine("Wanna beer?");
+
+            bool responseWrong = true;
+
+            while (responseWrong)
+            {
+                string reply = Console.ReadLine();
+                switch (reply.ToLower())
+                {
+                    case "y":
+                        Console.WriteLine("Go to Hyena");
+                        Console.WriteLine("Friends are always there");
+                        responseWrong = false;
+                        break;
+                    case "n":
+                        Console.WriteLine("Visit a doctor");
+                        responseWrong = false;
+                        break;
+                    default:
+                        Console.WriteLine("Are you drunk? y or n");
+                        break;
+                }
+            }
+            
+
+
+
+            Console.ReadLine();
         }
     }
 }
