@@ -6,7 +6,7 @@ namespace CoolStoryBro
     {
         static void Main(string[] args)
         {
-            string s = "5";
+            string s = "5dfdas";
             Console.
                 WriteLine(s);
             Console.
